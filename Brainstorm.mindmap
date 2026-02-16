@@ -1,0 +1,13 @@
+{
+  "nodeData": {
+    "id": "root",
+    "topic": "MainScreen",
+    "root": true,
+    "style": {
+      "fontSize": "24px"
+    },
+    "isFolded": false
+  },
+  "theme": "simple",
+  "selectedId": "00b86efa-2db4-4520-add4-9066c4458122"
+}
