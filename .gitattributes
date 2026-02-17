@@ -1,0 +1,24 @@
+# Set default behavior to automatically handle line endings
+* text=auto
+
+# Force Unity-specific text files to use LF (best for cross-platform)
+*.cs text eol=lf
+*.unity text eol=lf
+*.asset text eol=lf
+*.prefab text eol=lf
+*.mat text eol=lf
+*.meta text eol=lf
+*.controller text eol=lf
+*.inputactions text eol=lf
+
+# Explicitly declare binary files (don't touch line endings here)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.psd binary
+*.fbx binary
+*.obj binary
+*.anim binary
+*.ttf binary
+*.wav binary
+*.mp3 binary
