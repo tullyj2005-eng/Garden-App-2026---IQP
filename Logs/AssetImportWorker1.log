@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.8f1 (1c7db571dde0) revision 1867189'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-drago" at "2026-02-17T19:36:36.2055681Z"
 OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 40888 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-drago" at "2026-02-17T15:42:23.8567523Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-02-17T15:42:23Z
+Date: 2026-02-17T19:36:36Z
 
 COMMAND LINE ARGUMENTS:
 D:\Games\6000.3.8f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ D:/Unity/Garden-App-2026---IQP
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-59199
+55364
 -licensingIpc
 LicenseClient-drago
 -job-worker-count
@@ -67,12 +67,12 @@ D:/Unity/Garden-App-2026---IQP
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [14948]  Target information:
+Player connection [30684]  Target information:
 
-Player connection [14948]  * "[IP] 192.168.1.171 [Port] 0 [Flags] 2 [Guid] 3714953487 [EditorId] 3714953487 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2E9L01M) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [30684]  * "[IP] 192.168.1.171 [Port] 0 [Flags] 2 [Guid] 528477833 [EditorId] 528477833 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2E9L01M) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [14948] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [14948] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [30684] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [30684] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -84,6 +84,28 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              4c8d858e82d944fda79386de760ca6b5
+  Correlation Id:          15f9321f32d69498bd34ebb3e104c496
+  External correlation Id: 7973188170806464305
+  Machine Id:              30+kTfyOF3D76lGqegx6yIDloXY=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-drago" (connect: 0.00s, validation: 0.00s, handshake: 3.31s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-drago-notifications" at "2026-02-17T19:36:39.5170116Z"
+[Licensing::Module] Licensing Background thread has ended after 3.31s
+[Licensing::Module] Licensing is initialized (took 2.82s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-9XS9-M8MQ-4TTY-3UR6-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 2474360585094-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
 Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.8f1 (1c7db571dde0)
@@ -100,21 +122,10 @@ Initialize mono
 Mono path[0] = 'D:/Games/6000.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Games/6000.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Games/6000.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56608
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Games/6000.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-[Licensing::Module] Licensing is not yet initialized.
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.4+4293ba1
-  Session Id:              841d0bb085594a899b3b1993c0db5a55
-  Correlation Id:          15f9321f32d69498bd34ebb3e104c496
-  External correlation Id: 1456059776768575129
-  Machine Id:              30+kTfyOF3D76lGqegx6yIDloXY=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-drago" (connect: 0.00s, validation: 0.00s, handshake: 2.49s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-drago-notifications" at "2026-02-17T15:42:26.3538493Z"
-[Licensing::Module] Licensing Background thread has ended after 2.50s
-[Licensing::Module] Licensing is initialized (took 1.59s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: F4-9XS9-M8MQ-4TTY-3UR6-XXXX
@@ -127,58 +138,47 @@ Register platform support module: D:/Games/6000.3.8f1/Editor/Data/PlaybackEngine
   Type: Assigned
   Expiration: Unlimited
 Register platform support module: D:/Games/6000.3.8f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: F4-9XS9-M8MQ-4TTY-3UR6-XXXX
-  Product: Unity Personal
-  Type: ULF
-  Expiration: Unlimited
-[Licensing::Module] License group:
-  Id: 2474360585094-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
 Register platform support module: D:/Games/6000.3.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 1.600852 seconds.
-- Loaded All Assemblies, in  2.117 seconds
+Registered in 0.006834 seconds.
+- Loaded All Assemblies, in  0.764 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 246 ms
+Android Extension - Scanning For ADB Devices 345 ms
 Native extension for WindowsStandalone target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.724 seconds
-Domain Reload Profiling: 2841ms
-	BeginReloadAssembly (183ms)
+- Finished resetting the current domain, in  1.023 seconds
+Domain Reload Profiling: 1787ms
+	BeginReloadAssembly (269ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (49ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (1649ms)
-	LoadAllAssembliesAndSetupDomain (217ms)
-		LoadAssemblies (182ms)
+	RebuildCommonClasses (73ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (74ms)
+	LoadAllAssembliesAndSetupDomain (322ms)
+		LoadAssemblies (270ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (211ms)
-			TypeCache.Refresh (209ms)
-				TypeCache.ScanAssembly (194ms)
+		AnalyzeDomain (315ms)
+			TypeCache.Refresh (312ms)
+				TypeCache.ScanAssembly (291ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (725ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (1024ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (684ms)
+		SetupLoadedEditorAssemblies (973ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (361ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (90ms)
-			ProcessInitializeOnLoadAttributes (155ms)
-			ProcessInitializeOnLoadMethodAttributes (75ms)
+			InitializePlatformSupportModulesInManaged (486ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (128ms)
+			ProcessInitializeOnLoadAttributes (217ms)
+			ProcessInitializeOnLoadMethodAttributes (137ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -198,918 +198,1158 @@ Begin MonoManager ReloadAssembly
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  0.421 seconds
+- Loaded All Assemblies, in  0.583 seconds
 Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.472 seconds
-Domain Reload Profiling: 892ms
+- Finished resetting the current domain, in  0.569 seconds
+Domain Reload Profiling: 1150ms
+	BeginReloadAssembly (359ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (117ms)
+		LoadAssemblies (247ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (93ms)
+			TypeCache.Refresh (68ms)
+				TypeCache.ScanAssembly (42ms)
+			BuildScriptInfoCaches (14ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (569ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (413ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (140ms)
+			ProcessInitializeOnLoadAttributes (198ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 507 unused Assets / (142.4 KB). Loaded Objects now: 1119.
+Memory consumption went from 69.4 MB to 69.2 MB.
+Total: 6.539500 ms (FindLiveObjects: 0.152600 ms CreateObjectMapping: 0.032500 ms MarkObjects: 6.079700 ms  DeleteObjects: 0.273300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 475557.049122 seconds.
+  path: Assets/Scenes/Second_Screen_Test/Second_Screen.unity
+  artifactKey: Guid(b87bcfa32efb71e478022ed45e303481) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Second_Screen_Test/Second_Screen.unity using Guid(b87bcfa32efb71e478022ed45e303481) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '618dca1af55dbd962216fd4299487e99') in 0.0914088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (41.5 KB). Loaded Objects now: 1122.
+Memory consumption went from 70.0 MB to 69.9 MB.
+Total: 7.535100 ms (FindLiveObjects: 0.127300 ms CreateObjectMapping: 0.019300 ms MarkObjects: 7.197900 ms  DeleteObjects: 0.189100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-9XS9-M8MQ-4TTY-3UR6-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 2474360585094-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-9XS9-M8MQ-4TTY-3UR6-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 2474360585094-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in  0.509 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.691 seconds
+Domain Reload Profiling: 1200ms
+	BeginReloadAssembly (354ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (61ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (49ms)
+		LoadAssemblies (243ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (32ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (16ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (692ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (514ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (164ms)
+			ProcessInitializeOnLoadAttributes (261ms)
+			ProcessInitializeOnLoadMethodAttributes (63ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (78.7 KB). Loaded Objects now: 1122.
+Memory consumption went from 69.8 MB to 69.7 MB.
+Total: 7.840400 ms (FindLiveObjects: 0.184400 ms CreateObjectMapping: 0.041300 ms MarkObjects: 7.248300 ms  DeleteObjects: 0.363000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 98.181159 seconds.
+  path: Assets/Scenes/Second_Screen_Test/GoTo3DScene.cs
+  artifactKey: Guid(65521d1f5d4ffee41a3fe0a012fa67a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Second_Screen_Test/GoTo3DScene.cs using Guid(65521d1f5d4ffee41a3fe0a012fa67a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8e6cdb705c6ca67c91bf9af1cb76e46') in 0.0045939 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.420 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.578 seconds
+Domain Reload Profiling: 998ms
 	BeginReloadAssembly (287ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (47ms)
-	RebuildCommonClasses (53ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (21ms)
-	LoadAllAssembliesAndSetupDomain (41ms)
-		LoadAssemblies (181ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (31ms)
-			TypeCache.Refresh (27ms)
-				TypeCache.ScanAssembly (15ms)
-			BuildScriptInfoCaches (2ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (473ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (341ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (105ms)
-			ProcessInitializeOnLoadAttributes (167ms)
-			ProcessInitializeOnLoadMethodAttributes (47ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 66 unused Assets / (28.5 KB). Loaded Objects now: 661.
-Memory consumption went from 64.7 MB to 64.7 MB.
-Total: 7.086300 ms (FindLiveObjects: 0.106000 ms CreateObjectMapping: 0.015800 ms MarkObjects: 6.855900 ms  DeleteObjects: 0.106800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 461825.361673 seconds.
-  path: Assets/UI Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss
-  artifactKey: Guid(c01fed95e5210e740b0cbb932a46ea2f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/UI Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss using Guid(c01fed95e5210e740b0cbb932a46ea2f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e071ebb7a5c17f183d6e65ed1920b2f7') in 0.1753909 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: F4-9XS9-M8MQ-4TTY-3UR6-XXXX
-  Product: Unity Personal
-  Type: ULF
-  Expiration: Unlimited
-[Licensing::Module] License group:
-  Id: 2474360585094-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
-- Loaded All Assemblies, in  0.407 seconds
-Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.461 seconds
-Domain Reload Profiling: 867ms
-	BeginReloadAssembly (278ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (42ms)
-	RebuildCommonClasses (53ms)
-	RebuildNativeTypeToScriptingClass (18ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (21ms)
 	initialDomainReloadingComplete (20ms)
-	LoadAllAssembliesAndSetupDomain (37ms)
-		LoadAssemblies (190ms)
+	LoadAllAssembliesAndSetupDomain (42ms)
+		LoadAssemblies (196ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (22ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (7ms)
-			BuildScriptInfoCaches (5ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (461ms)
+		AnalyzeDomain (27ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (14ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (578ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (328ms)
+		SetupLoadedEditorAssemblies (428ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (116ms)
-			ProcessInitializeOnLoadAttributes (152ms)
-			ProcessInitializeOnLoadMethodAttributes (41ms)
-			AfterProcessingInitializeOnLoad (2ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (181ms)
+			ProcessInitializeOnLoadAttributes (174ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (7ms)
 Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 416 unused Assets / (64.0 KB). Loaded Objects now: 1015.
-Memory consumption went from 67.6 MB to 67.6 MB.
-Total: 5.302200 ms (FindLiveObjects: 0.104900 ms CreateObjectMapping: 0.023900 ms MarkObjects: 4.983100 ms  DeleteObjects: 0.189100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: F4-9XS9-M8MQ-4TTY-3UR6-XXXX
-  Product: Unity Personal
-  Type: ULF
-  Expiration: Unlimited
-[Licensing::Module] License group:
-  Id: 2474360585094-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
-- Loaded All Assemblies, in  0.402 seconds
-Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.450 seconds
-Domain Reload Profiling: 852ms
-	BeginReloadAssembly (268ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (42ms)
-	RebuildCommonClasses (57ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (20ms)
-	LoadAllAssembliesAndSetupDomain (36ms)
-		LoadAssemblies (182ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (24ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (3ms)
-			BuildScriptInfoCaches (11ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (450ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (329ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (113ms)
-			ProcessInitializeOnLoadAttributes (155ms)
-			ProcessInitializeOnLoadMethodAttributes (42ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 470 unused Assets / (79.3 KB). Loaded Objects now: 1069.
-Memory consumption went from 68.2 MB to 68.2 MB.
-Total: 5.265900 ms (FindLiveObjects: 0.109800 ms CreateObjectMapping: 0.022600 ms MarkObjects: 4.924600 ms  DeleteObjects: 0.207600 ms)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (44.9 KB). Loaded Objects now: 1122.
+Memory consumption went from 69.9 MB to 69.9 MB.
+Total: 5.383000 ms (FindLiveObjects: 0.159400 ms CreateObjectMapping: 0.032000 ms MarkObjects: 5.018400 ms  DeleteObjects: 0.171600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 932.662061 seconds.
-  path: Assets/Scenes/SHPP-Logo.png
-  artifactKey: Guid(e2cbfd2b184f21148b518dfac0f19af4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/SHPP-Logo.png using Guid(e2cbfd2b184f21148b518dfac0f19af4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: F4-9XS9-M8MQ-4TTY-3UR6-XXXX
-  Product: Unity Personal
-  Type: ULF
-  Expiration: Unlimited
-[Licensing::Module] License group:
-  Id: 2474360585094-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: F4-9XS9-M8MQ-4TTY-3UR6-XXXX
-  Product: Unity Personal
-  Type: ULF
-  Expiration: Unlimited
-[Licensing::Module] License group:
-  Id: 2474360585094-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
- -> (artifact id: '6e4e2e8c6094ae276b22a8803bc30301') in 0.1594494 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 112.979119 seconds.
-  path: Assets/Scenes/MainScreen/Main_Screen.unity
-  artifactKey: Guid(2889f8fef9ad42045a19987829c238ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Main_Screen.unity using Guid(2889f8fef9ad42045a19987829c238ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e659f3a20db89103600a5c717a5f6c47') in 0.0149905 seconds
+  Time since last request: 254.532437 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark
+  artifactKey: Guid(0451b18fbf2e07d40b920602ade33f36) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark using Guid(0451b18fbf2e07d40b920602ade33f36) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '44e118bb676745698c613e2be5bcca92') in 0.097376 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 80.665644 seconds.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt/DryDirtNormalMap.png
+  artifactKey: Guid(9a11c93040713cd4bbf65d6094d12ebe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt/DryDirtNormalMap.png using Guid(9a11c93040713cd4bbf65d6094d12ebe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-9XS9-M8MQ-4TTY-3UR6-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 2474360585094-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-9XS9-M8MQ-4TTY-3UR6-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 2474360585094-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+ -> (artifact id: 'b9a6f5e9423908acacee9d057fcda0fe') in 0.394506 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks/WoodPlanksAlbedo.png
+  artifactKey: Guid(dbee807792796824cb08e25874613a50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks/WoodPlanksAlbedo.png using Guid(dbee807792796824cb08e25874613a50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6c1f83dc84684d127a7325cbd3a24443') in 0.2547746 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtAlbedo.png
+  artifactKey: Guid(a7c02bab705904a4c861d9dc7ef01968) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtAlbedo.png using Guid(a7c02bab705904a4c861d9dc7ef01968) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2ae945dafa368c008fa29c6c8e23a47a') in 0.2268376 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WildGrass.mat
+  artifactKey: Guid(a34848fa6d080734780eda6574931999) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WildGrass.mat using Guid(a34848fa6d080734780eda6574931999) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '294ce10066551c4f634de57b1ff0afa7') in 1.0479719 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass/WildGrassNormalMap.png
+  artifactKey: Guid(6d011c28540c6bf4ba9410c900c199b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass/WildGrassNormalMap.png using Guid(6d011c28540c6bf4ba9410c900c199b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '24e9c14d0f6188f34603c587c02adb82') in 0.2281465 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneDisplacementMap.png
+  artifactKey: Guid(8ae1682fb301df2489302f8046f2822b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneDisplacementMap.png using Guid(8ae1682fb301df2489302f8046f2822b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9a1f5fca08b4be519f86ad2978d2d174') in 0.2442257 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000777 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks/WoodPlanksNormalMap.png
+  artifactKey: Guid(5cad53a92bbb64c458804787c2b6525e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks/WoodPlanksNormalMap.png using Guid(5cad53a92bbb64c458804787c2b6525e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0ffb750b68a34f62aecba2beb821a1e6') in 0.2165622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone
+  artifactKey: Guid(e2aba035f22acf04cbf8345e4dd170c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone using Guid(e2aba035f22acf04cbf8345e4dd170c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '289a5f691220aeef77a122b33aed27cf') in 0.0150439 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass/WildGrassAmbientOcclusionMap.png
+  artifactKey: Guid(f1b92062adb90f44b82c4b914f761569) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass/WildGrassAmbientOcclusionMap.png using Guid(f1b92062adb90f44b82c4b914f761569) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4255af1664511aa66c60c3027ad53ff5') in 0.2708157 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Demo/DemoScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Demo/DemoScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a72f873cc3e52f5c493bb7f836e03c97') in 0.0212371 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
   path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtSpecularMap.png
   artifactKey: Guid(0b6a359ebe978c64b96e7cf6bff7168c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtSpecularMap.png using Guid(0b6a359ebe978c64b96e7cf6bff7168c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5094dd7edaee35feac1135bb6c6cca88') in 0.0400378 seconds
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtSpecularMap.png using Guid(0b6a359ebe978c64b96e7cf6bff7168c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fbecf80382a45e463861abaae51da96c') in 0.1972633 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000081 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/ShortGrass/ShortGrassAlbedo.png
-  artifactKey: Guid(9c37f19ba3a1a9044a1cf025fabd6884) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/ShortGrass/ShortGrassAlbedo.png using Guid(9c37f19ba3a1a9044a1cf025fabd6884) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1b7396a6b4ef1a37c9a86e836a6381d6') in 0.0334349 seconds
+  Time since last request: 0.001999 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtNormalMap.png
+  artifactKey: Guid(4a6e5bb32d9fd78469138a018f6dab87) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtNormalMap.png using Guid(4a6e5bb32d9fd78469138a018f6dab87) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bc169432976cf105612aa0219e83c85f') in 0.3278314 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkSpecularMap.png
-  artifactKey: Guid(5e48367800cc40b4e953eb126c22f9df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkSpecularMap.png using Guid(5e48367800cc40b4e953eb126c22f9df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e04c938d62586099e902304bebbf6153') in 0.0263084 seconds
+  Time since last request: 0.000312 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt/DryDirtSpecularMap.png
+  artifactKey: Guid(0516a1f1f1c55ea4a802fa9bf43e9693) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt/DryDirtSpecularMap.png using Guid(0516a1f1f1c55ea4a802fa9bf43e9693) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '289d6271c9c043e13e0b25a834b00340') in 0.2314672 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt/DryDirtAmbientOcclusionMap.png
-  artifactKey: Guid(9437a27e04a41354899ecf3e31f2afbb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt/DryDirtAmbientOcclusionMap.png using Guid(9437a27e04a41354899ecf3e31f2afbb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c52aad2df8fa2d55d1bc0808531a51ce') in 0.0244121 seconds
+  Time since last request: 0.000033 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkNormalMap.png
+  artifactKey: Guid(42cdccbe82df40d4eb231f92f70aa069) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkNormalMap.png using Guid(42cdccbe82df40d4eb231f92f70aa069) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd636e081aadcd355e663e100c691a1a2') in 0.2502773 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000518 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/SmoothStone.mat
+  artifactKey: Guid(dc4343123c4206f4ca8a2211faa89522) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/SmoothStone.mat using Guid(dc4343123c4206f4ca8a2211faa89522) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dff5f96da5be0c525675e307d221a0d5') in 0.9858328 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/ShortGrass.mat
+  artifactKey: Guid(a76302828de7f0e49b696941f3753e16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/ShortGrass.mat using Guid(a76302828de7f0e49b696941f3753e16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c0e10b65b3749068ac7c9b96edfa7997') in 0.9674682 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone
+  artifactKey: Guid(410b43ef5bd33b74d8055c37d427b2da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone using Guid(410b43ef5bd33b74d8055c37d427b2da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '99e35ef0f256a379b4cc25fdd69eea0c') in 0.0200312 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Demo
+  artifactKey: Guid(559f8a2e00d35974a99a6ee6156e305b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Demo using Guid(559f8a2e00d35974a99a6ee6156e305b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ca65bab64b3e82db1896fe84d0db72f6') in 0.0193345 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt/DryDirtDisplacementMap.png
+  artifactKey: Guid(2b2d1fbc30901394ea91a24a65d043d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt/DryDirtDisplacementMap.png using Guid(2b2d1fbc30901394ea91a24a65d043d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '76f9797e8f9b2b8faa7d02f8b0d3312f') in 0.2136163 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass/WildGrassAlbedo.png
+  artifactKey: Guid(5dc6d075b21b95449ace215a6cf2f787) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass/WildGrassAlbedo.png using Guid(5dc6d075b21b95449ace215a6cf2f787) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e794edee719d51e1b8ff153e12d60761') in 0.2567869 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000650 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtAmbientOcclusionMap.png
+  artifactKey: Guid(101c5f156fb4c184da9b18eb450418c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtAmbientOcclusionMap.png using Guid(101c5f156fb4c184da9b18eb450418c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '67f8236a24c7c461b797ccaa775c5bf8') in 0.2324128 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneAmbientOcclusionMap.png
+  artifactKey: Guid(81ada956c53cc3647946828dcdf7dac5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneAmbientOcclusionMap.png using Guid(81ada956c53cc3647946828dcdf7dac5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd0ba7e5a0e19e1e3371dc812c65fa98a') in 0.3266761 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001881 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials
+  artifactKey: Guid(eea004d905d8a5b44a969f7df9240289) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials using Guid(eea004d905d8a5b44a969f7df9240289) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '56657e5c80645deddcce18c546f6f917') in 0.0336727 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002288 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials
+  artifactKey: Guid(13fb998c01f0a38448d80740293cf71c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials using Guid(13fb998c01f0a38448d80740293cf71c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ec2388edaa7cb937fffb5edd7e3807d9') in 0.0310306 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks/WoodPlanksSpecularMap.png
+  artifactKey: Guid(fe353d43518245a4b9ebdef56b20474b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks/WoodPlanksSpecularMap.png using Guid(fe353d43518245a4b9ebdef56b20474b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '77c6464d1065bcd294ed5070cd609d4a') in 0.3481361 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000183 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/ShortGrass
-  artifactKey: Guid(4a75885c1260330409cff46a19bbac5d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/ShortGrass using Guid(4a75885c1260330409cff46a19bbac5d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9ed01ca55daf6c6a01c4130a1ee6a585') in 0.0129899 seconds
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt/DryDirtAlbedo.png
+  artifactKey: Guid(c608a6f3f4e673c409f2436b5172576a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt/DryDirtAlbedo.png using Guid(c608a6f3f4e673c409f2436b5172576a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9e858e218543ec634c9b074a8b0a02d6') in 0.2539341 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000076 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkAlbedo.png
-  artifactKey: Guid(1c63373a6aad19148a31c353b426708c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkAlbedo.png using Guid(1c63373a6aad19148a31c353b426708c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd105bc13be6da4541c50f2b5e20d7015') in 0.0279244 seconds
+  Time since last request: 0.000134 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks/WoodPlanksDisplacementMap.png
+  artifactKey: Guid(196cd1965f39f9f45b2169b753df6fe4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks/WoodPlanksDisplacementMap.png using Guid(196cd1965f39f9f45b2169b753df6fe4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f0b2c8ab3dbe7e24d73f933cbeed9a27') in 0.2817662 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/DryDirt.mat
-  artifactKey: Guid(1511ad56e11bc754d8017a5b560f8043) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/DryDirt.mat using Guid(1511ad56e11bc754d8017a5b560f8043) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3769689b8dc9788c3ee60f5cb20375f0') in 0.1256804 seconds
+  Time since last request: 0.000318 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneAlbedo.png
+  artifactKey: Guid(b2666d5a89d85314ca2c984e999c83cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneAlbedo.png using Guid(b2666d5a89d85314ca2c984e999c83cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '753a9d6ad6aa2f65320975ef30057a04') in 0.2322284 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkDisplacementMap.png
+  artifactKey: Guid(6d4da26f93ca1574bbd47558366f99ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkDisplacementMap.png using Guid(6d4da26f93ca1574bbd47558366f99ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '30c46ab994b23bcd66bca1ea781397a6') in 0.2734678 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WoodPlanks.mat
+  artifactKey: Guid(a0cea2e6c1c5bb24f9b3566064937a8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WoodPlanks.mat using Guid(a0cea2e6c1c5bb24f9b3566064937a8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd8efae3ad36bd2eb6713deb81961f1e1') in 0.7422046 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures
-  artifactKey: Guid(9aa8d06b517cab0449a7211a3abd2e94) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures using Guid(9aa8d06b517cab0449a7211a3abd2e94) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '69c6d43b8668687dc7eb0a2511616a24') in 0.015185 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000084 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneDisplacementMap.png
-  artifactKey: Guid(8ae1682fb301df2489302f8046f2822b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneDisplacementMap.png using Guid(8ae1682fb301df2489302f8046f2822b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd7ae749459aa1ee2121b4c62f7547bc4') in 0.0270261 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks/WoodPlanksAmbientOcclusionMap.png
-  artifactKey: Guid(c1585020883357f4caaeda440ce80569) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks/WoodPlanksAmbientOcclusionMap.png using Guid(c1585020883357f4caaeda440ce80569) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '782e5117353c74b72a3e649d9c09daeb') in 0.0320922 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000116 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone/RoughStoneAlbedo.png
-  artifactKey: Guid(e85c81f27fc29ff488756d133930122a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone/RoughStoneAlbedo.png using Guid(e85c81f27fc29ff488756d133930122a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '44ef3fab548c8531d418bc3df2dc4a70') in 0.0268977 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000070 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone
-  artifactKey: Guid(e2aba035f22acf04cbf8345e4dd170c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone using Guid(e2aba035f22acf04cbf8345e4dd170c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ccc66d12405695baa66c1a3f56874cac') in 0.0828847 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone/RoughStoneSpecularMap.png
-  artifactKey: Guid(b960f4a581ddc874fadc053c27f13731) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone/RoughStoneSpecularMap.png using Guid(b960f4a581ddc874fadc053c27f13731) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '662f51cab571ca9715c275cffec0fe9b') in 0.0253686 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000090 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneSpecularMap.png
-  artifactKey: Guid(6a0862046ad201344bb6a48593017239) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneSpecularMap.png using Guid(6a0862046ad201344bb6a48593017239) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '262ec202020ad61e7883577c77b3d9a2') in 0.0279194 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
+  Time since last request: 5.924473 seconds.
   path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WoodBark.mat
-  artifactKey: Guid(a15f7bd6488c5fa4aa55f3b10534f84c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WoodBark.mat using Guid(a15f7bd6488c5fa4aa55f3b10534f84c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3e17104723f88fe4d943b8c2abb3f2bd') in 0.0560891 seconds
+  artifactKey: Guid(a15f7bd6488c5fa4aa55f3b10534f84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WoodBark.mat using Guid(a15f7bd6488c5fa4aa55f3b10534f84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '02803329b7a0017fc0a1c5c7e95bda4a') in 1.8119912 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkNormalMap.png
-  artifactKey: Guid(42cdccbe82df40d4eb231f92f70aa069) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkNormalMap.png using Guid(42cdccbe82df40d4eb231f92f70aa069) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '64068dd8974c7aefae5f16c3f1d56a78') in 0.0383387 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000100 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass/WildGrassSpecularMap.png
-  artifactKey: Guid(3288225a3b9e86d449d1e19a3f9bbb64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass/WildGrassSpecularMap.png using Guid(3288225a3b9e86d449d1e19a3f9bbb64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '417b34d5cdfac8b9f4ffec2d7c554e29') in 0.0297254 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks
-  artifactKey: Guid(89718c18ad3b67a449b665915d2fc971) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks using Guid(89718c18ad3b67a449b665915d2fc971) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '406575feeb83f9de5f0ef16b5fae1163') in 0.0157355 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000103 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/ShortGrass.mat
-  artifactKey: Guid(a76302828de7f0e49b696941f3753e16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/ShortGrass.mat using Guid(a76302828de7f0e49b696941f3753e16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bb62b2b4fca196e7e083b0a67c48bb9b') in 0.0503912 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone/RoughStoneDisplacementMap.png
-  artifactKey: Guid(7d7bff3f92af8f34f90231a9e58bc087) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone/RoughStoneDisplacementMap.png using Guid(7d7bff3f92af8f34f90231a9e58bc087) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '72f6711981adda372714bcc704101ef7') in 0.0292653 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneNormalMap.png
-  artifactKey: Guid(e4e76fc58f42d8a40aab84582ba5030b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneNormalMap.png using Guid(e4e76fc58f42d8a40aab84582ba5030b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c776e86d51bf64295a8f5022c03da00c') in 0.0351606 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtDisplacementMap.png
-  artifactKey: Guid(ab34496e1927c4a4baae84c57ce7831a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtDisplacementMap.png using Guid(ab34496e1927c4a4baae84c57ce7831a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e979e7e6865dfdbc3528bda5ca2f6cad') in 0.0249967 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass/WildGrassAlbedo.png
-  artifactKey: Guid(5dc6d075b21b95449ace215a6cf2f787) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass/WildGrassAlbedo.png using Guid(5dc6d075b21b95449ace215a6cf2f787) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bee522dd87ff09c5e4df667be03091fc') in 0.0313736 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000090 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtAmbientOcclusionMap.png
-  artifactKey: Guid(101c5f156fb4c184da9b18eb450418c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtAmbientOcclusionMap.png using Guid(101c5f156fb4c184da9b18eb450418c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ae8eb2873224502e33a11aaae79b2afe') in 0.0329323 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneAmbientOcclusionMap.png
-  artifactKey: Guid(81ada956c53cc3647946828dcdf7dac5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneAmbientOcclusionMap.png using Guid(81ada956c53cc3647946828dcdf7dac5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5026c22c43f3ca3e5213d9e8ec9e89b5') in 0.0256127 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000031 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12ad92565f1949a0c414b159d3096fa0') in 0.0849737 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000061 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials
-  artifactKey: Guid(eea004d905d8a5b44a969f7df9240289) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials using Guid(eea004d905d8a5b44a969f7df9240289) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b09f599b7ba2c1ef60fdd00f2c65dfeb') in 0.0167167 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000080 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneAlbedo.png
-  artifactKey: Guid(b2666d5a89d85314ca2c984e999c83cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneAlbedo.png using Guid(b2666d5a89d85314ca2c984e999c83cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '23a3c2f2094934401e3ad0eb4f2f91f2') in 0.0281655 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks/WoodPlanksDisplacementMap.png
-  artifactKey: Guid(196cd1965f39f9f45b2169b753df6fe4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks/WoodPlanksDisplacementMap.png using Guid(196cd1965f39f9f45b2169b753df6fe4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1263f812ff6f50524c1b901a6ba8d064') in 0.1678312 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WetDirt.mat
-  artifactKey: Guid(ff174c0f8cc01094995d2db1a0488ee1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WetDirt.mat using Guid(ff174c0f8cc01094995d2db1a0488ee1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'af078eb46820a336cb7f7980bb246b70') in 0.0640539 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkDisplacementMap.png
-  artifactKey: Guid(6d4da26f93ca1574bbd47558366f99ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkDisplacementMap.png using Guid(6d4da26f93ca1574bbd47558366f99ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '95b76b1950332e03e8694fc2996effbe') in 0.0302957 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone/RoughStoneAmbientOcclusionMap.png
-  artifactKey: Guid(e52463cf5f03b884998bcba9049b2ad6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone/RoughStoneAmbientOcclusionMap.png using Guid(e52463cf5f03b884998bcba9049b2ad6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '09d64cb6853cfa466626d2cf99fb9435') in 0.0277235 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.201957 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt
-  artifactKey: Guid(9054964a53b86b94b8bfec7d299d12f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt using Guid(9054964a53b86b94b8bfec7d299d12f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3cfbcc134d34809efa827aca0c6c8b4d') in 0.0131463 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000092 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/ShortGrass/ShortGrassAlbedo.png
-  artifactKey: Guid(9c37f19ba3a1a9044a1cf025fabd6884) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/ShortGrass/ShortGrassAlbedo.png using Guid(9c37f19ba3a1a9044a1cf025fabd6884) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '253f26d58054a0c4a23a1f663732f6d9') in 0.0266242 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000073 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkSpecularMap.png
-  artifactKey: Guid(5e48367800cc40b4e953eb126c22f9df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkSpecularMap.png using Guid(5e48367800cc40b4e953eb126c22f9df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b8bb4205df137377dd1da89078ea98d3') in 0.0269259 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000097 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkAlbedo.png
-  artifactKey: Guid(1c63373a6aad19148a31c353b426708c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkAlbedo.png using Guid(1c63373a6aad19148a31c353b426708c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab9bef8799e490e597e8f9c276b19f67') in 0.0279941 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt/DryDirtAmbientOcclusionMap.png
-  artifactKey: Guid(9437a27e04a41354899ecf3e31f2afbb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt/DryDirtAmbientOcclusionMap.png using Guid(9437a27e04a41354899ecf3e31f2afbb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4fe80c2097c4f46d7d15321cc0b2d91f') in 0.0295155 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/DryDirt.mat
-  artifactKey: Guid(1511ad56e11bc754d8017a5b560f8043) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/DryDirt.mat using Guid(1511ad56e11bc754d8017a5b560f8043) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f1aaf7e8cc00ee3dc395cd177647ed96') in 0.0637255 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures
-  artifactKey: Guid(9aa8d06b517cab0449a7211a3abd2e94) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures using Guid(9aa8d06b517cab0449a7211a3abd2e94) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '07e9ea40fc6111363c3371301e53b3be') in 0.0129717 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt
-  artifactKey: Guid(a1d283c83dac75640908adaf0ccbf265) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt using Guid(a1d283c83dac75640908adaf0ccbf265) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '48f86752479162ed24fa3ccc6733f7e9') in 0.0178359 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks/WoodPlanksAmbientOcclusionMap.png
-  artifactKey: Guid(c1585020883357f4caaeda440ce80569) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks/WoodPlanksAmbientOcclusionMap.png using Guid(c1585020883357f4caaeda440ce80569) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bcdde1e28e15bc019f942d052edf1c9a') in 0.0275652 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000081 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/ShortGrass/ShortGrassSpecularMap.png
-  artifactKey: Guid(fdb70e206ff250243a834a11ba4c267a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/ShortGrass/ShortGrassSpecularMap.png using Guid(fdb70e206ff250243a834a11ba4c267a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b918ca60601e81e011c08ef2a960705e') in 0.0268602 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000108 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone/RoughStoneSpecularMap.png
-  artifactKey: Guid(b960f4a581ddc874fadc053c27f13731) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone/RoughStoneSpecularMap.png using Guid(b960f4a581ddc874fadc053c27f13731) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd8fbae50fc90aa6431f61adfec05608c') in 0.0241495 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneSpecularMap.png
-  artifactKey: Guid(6a0862046ad201344bb6a48593017239) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneSpecularMap.png using Guid(6a0862046ad201344bb6a48593017239) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '72ee022fba7ae154fbedd7dfee334453') in 0.0301124 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000079 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt/DryDirtSpecularMap.png
-  artifactKey: Guid(0516a1f1f1c55ea4a802fa9bf43e9693) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt/DryDirtSpecularMap.png using Guid(0516a1f1f1c55ea4a802fa9bf43e9693) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b61472c44f4ac4623ca70df40674935f') in 0.0318655 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/SmoothStone.mat
-  artifactKey: Guid(dc4343123c4206f4ca8a2211faa89522) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/SmoothStone.mat using Guid(dc4343123c4206f4ca8a2211faa89522) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '462ea80c7e109f6d9f0c8696d6c0d7f1') in 0.0695172 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass
-  artifactKey: Guid(540d7fbc775f22147ac8478f945ac0c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass using Guid(540d7fbc775f22147ac8478f945ac0c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd12b7df5f7e1c685029fe08ae6e2d509') in 0.0203768 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/ShortGrass/ShortGrassAmbientOcclusionMap.png
-  artifactKey: Guid(59046b4c6de3b004e916df1ca8a922b2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/ShortGrass/ShortGrassAmbientOcclusionMap.png using Guid(59046b4c6de3b004e916df1ca8a922b2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '431524b1ae68ecca4693aefd9e27857c') in 0.0285165 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneNormalMap.png
-  artifactKey: Guid(e4e76fc58f42d8a40aab84582ba5030b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneNormalMap.png using Guid(e4e76fc58f42d8a40aab84582ba5030b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e15680e42232b6ff5081a399836f4253') in 0.0339608 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone
-  artifactKey: Guid(410b43ef5bd33b74d8055c37d427b2da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone using Guid(410b43ef5bd33b74d8055c37d427b2da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd3ba2fd8149fb2b23ee4791e0fe11cd7') in 0.0144312 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000119 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Demo
-  artifactKey: Guid(559f8a2e00d35974a99a6ee6156e305b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Demo using Guid(559f8a2e00d35974a99a6ee6156e305b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9c6266c6710f79099e6f027bd76c68d9') in 0.0127081 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt/DryDirtDisplacementMap.png
-  artifactKey: Guid(2b2d1fbc30901394ea91a24a65d043d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/DryDirt/DryDirtDisplacementMap.png using Guid(2b2d1fbc30901394ea91a24a65d043d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c08da95b87448bf56f4842827a5323da') in 0.0229609 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtDisplacementMap.png
-  artifactKey: Guid(ab34496e1927c4a4baae84c57ce7831a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtDisplacementMap.png using Guid(ab34496e1927c4a4baae84c57ce7831a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '91ef462c95c65b377168533e042980ac') in 0.0255368 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000110 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtAmbientOcclusionMap.png
-  artifactKey: Guid(101c5f156fb4c184da9b18eb450418c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtAmbientOcclusionMap.png using Guid(101c5f156fb4c184da9b18eb450418c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '563f47049f9f7a4ff2d079e9c5a6e2b3') in 0.0308171 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000084 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/RoughStone.mat
-  artifactKey: Guid(f34d13499366a0743ac4bcc0fc0b3162) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/RoughStone.mat using Guid(f34d13499366a0743ac4bcc0fc0b3162) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '373c385b3913eafbdf3b8cb926174a3f') in 0.0591176 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks/WoodPlanksDisplacementMap.png
-  artifactKey: Guid(196cd1965f39f9f45b2169b753df6fe4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodPlanks/WoodPlanksDisplacementMap.png using Guid(196cd1965f39f9f45b2169b753df6fe4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '55ff154538f3e7f709b53e7f5da562fa') in 0.0273588 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000094 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneAlbedo.png
-  artifactKey: Guid(b2666d5a89d85314ca2c984e999c83cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneAlbedo.png using Guid(b2666d5a89d85314ca2c984e999c83cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ea041216196d9ee509edcbd3deb5ac6a') in 0.0330363 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000087 seconds.
-  path: Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WoodPlanks.mat
-  artifactKey: Guid(a0cea2e6c1c5bb24f9b3566064937a8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WoodPlanks.mat using Guid(a0cea2e6c1c5bb24f9b3566064937a8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd45f07cd97f38161d0ea624d6750a8cb') in 0.0552173 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.044140 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt
-  artifactKey: Guid(9054964a53b86b94b8bfec7d299d12f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt using Guid(9054964a53b86b94b8bfec7d299d12f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '567bd8565dd7b73c3aba7912fda5d2e6') in 0.0145566 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkSpecularMap.png
-  artifactKey: Guid(5e48367800cc40b4e953eb126c22f9df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkSpecularMap.png using Guid(5e48367800cc40b4e953eb126c22f9df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '480b22062396f5c074be6a2abf56bc8d') in 0.0281569 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkAlbedo.png
-  artifactKey: Guid(1c63373a6aad19148a31c353b426708c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkAlbedo.png using Guid(1c63373a6aad19148a31c353b426708c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8b8f52d4c3f9835f2f106a2de3c305e4') in 0.0275391 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/ShortGrass
-  artifactKey: Guid(4a75885c1260330409cff46a19bbac5d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/ShortGrass using Guid(4a75885c1260330409cff46a19bbac5d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '777d069cac429c3aabd87e0b3a643a2c') in 0.0189422 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/DryDirt.mat
-  artifactKey: Guid(1511ad56e11bc754d8017a5b560f8043) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/DryDirt.mat using Guid(1511ad56e11bc754d8017a5b560f8043) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c49da3bcfe24c51e2ade80f883b7277a') in 0.085084 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f9a0aed957af497b76cc67cb52532af') in 0.0607956 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000024 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkAmbientOcclusionMap.png
-  artifactKey: Guid(a482952b6499ace4685e68386d15b528) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WoodBark/WoodBarkAmbientOcclusionMap.png using Guid(a482952b6499ace4685e68386d15b528) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2f48f43e5f67fcfe3855b7588fcd85db') in 0.0271177 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone/RoughStoneAlbedo.png
-  artifactKey: Guid(e85c81f27fc29ff488756d133930122a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone/RoughStoneAlbedo.png using Guid(e85c81f27fc29ff488756d133930122a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6bb164f34468effe19fd462898eef23f') in 0.0276523 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass/WildGrassAmbientOcclusionMap.png
-  artifactKey: Guid(f1b92062adb90f44b82c4b914f761569) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass/WildGrassAmbientOcclusionMap.png using Guid(f1b92062adb90f44b82c4b914f761569) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '289eec0761e17adff083d59c9e3dd54b') in 0.0268392 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtSpecularMap.png
-  artifactKey: Guid(0b6a359ebe978c64b96e7cf6bff7168c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WetDirt/WetDirtSpecularMap.png using Guid(0b6a359ebe978c64b96e7cf6bff7168c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '37b4a83df150092321920b9936fc4a4b') in 0.0256118 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WetDirt.mat
+  artifactKey: Guid(ff174c0f8cc01094995d2db1a0488ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WetDirt.mat using Guid(ff174c0f8cc01094995d2db1a0488ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2fc24c46e261df86f1812103d17646b6') in 1.3556937 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000055 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WoodBark.mat
-  artifactKey: Guid(a15f7bd6488c5fa4aa55f3b10534f84c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WoodBark.mat using Guid(a15f7bd6488c5fa4aa55f3b10534f84c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '236b9469896c025be1e43fc5189f5052') in 0.0731644 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass/WildGrassSpecularMap.png
-  artifactKey: Guid(3288225a3b9e86d449d1e19a3f9bbb64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass/WildGrassSpecularMap.png using Guid(3288225a3b9e86d449d1e19a3f9bbb64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bd580915c25fe1cfd4f4856060e29628') in 0.0268802 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000324 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass
-  artifactKey: Guid(540d7fbc775f22147ac8478f945ac0c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass using Guid(540d7fbc775f22147ac8478f945ac0c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4b4f51f4d00c9dc70ab18074addbf5d4') in 0.0195484 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone/RoughStoneDisplacementMap.png
-  artifactKey: Guid(7d7bff3f92af8f34f90231a9e58bc087) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/RoughStone/RoughStoneDisplacementMap.png using Guid(7d7bff3f92af8f34f90231a9e58bc087) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bf73efcdada384992e394824216f0bc0') in 0.0302341 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneNormalMap.png
-  artifactKey: Guid(e4e76fc58f42d8a40aab84582ba5030b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneNormalMap.png using Guid(e4e76fc58f42d8a40aab84582ba5030b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e5f97bb54bf3d743d21830d478d04654') in 0.0370652 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000106 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass/WildGrassAlbedo.png
-  artifactKey: Guid(5dc6d075b21b95449ace215a6cf2f787) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/WildGrass/WildGrassAlbedo.png using Guid(5dc6d075b21b95449ace215a6cf2f787) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '925af77836f9a55a64c1d2a22d26dd74') in 0.0259139 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/ShortGrass/ShortGrassDisplacementMap.png
-  artifactKey: Guid(cc82700930da9c34ba9bd36e946ac4f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/ShortGrass/ShortGrassDisplacementMap.png using Guid(cc82700930da9c34ba9bd36e946ac4f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '36e97413bed465beb07af9c953829094') in 0.0280753 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/RoughStone.mat
-  artifactKey: Guid(f34d13499366a0743ac4bcc0fc0b3162) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/RoughStone.mat using Guid(f34d13499366a0743ac4bcc0fc0b3162) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cc887376283a03b32ed126e35dcf3cba') in 0.0704196 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum
-  artifactKey: Guid(5e725792f90b7bb42af219c8152711c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum using Guid(5e725792f90b7bb42af219c8152711c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '20b10a5556a61de873299dc91583d64a') in 0.0106107 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000085 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WetDirt.mat
-  artifactKey: Guid(ff174c0f8cc01094995d2db1a0488ee1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WetDirt.mat using Guid(ff174c0f8cc01094995d2db1a0488ee1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7382465098fe82045055e5ef0ba2e38d') in 0.072105 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.465098 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneDisplacementMap.png
-  artifactKey: Guid(8ae1682fb301df2489302f8046f2822b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneDisplacementMap.png using Guid(8ae1682fb301df2489302f8046f2822b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '909f9c46df9676eb1fbd12acd3eb4d06') in 0.1036281 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneSpecularMap.png
-  artifactKey: Guid(6a0862046ad201344bb6a48593017239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Textures/SmoothStone/SmoothStoneSpecularMap.png using Guid(6a0862046ad201344bb6a48593017239) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '36f22a078f8e269bbc67c6aabf8a0fb2') in 0.0510774 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.525161 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/RoughStone.mat
-  artifactKey: Guid(f34d13499366a0743ac4bcc0fc0b3162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/RoughStone.mat using Guid(f34d13499366a0743ac4bcc0fc0b3162) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b17c03c0294e4f708442c596b148dd00') in 0.3642745 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WoodBark.mat
-  artifactKey: Guid(a15f7bd6488c5fa4aa55f3b10534f84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/WoodBark.mat using Guid(a15f7bd6488c5fa4aa55f3b10534f84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae942c700c97723be0a91624f33da3c6') in 0.0898919 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/SmoothStone.mat
-  artifactKey: Guid(dc4343123c4206f4ca8a2211faa89522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainScreen/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/SmoothStone.mat using Guid(dc4343123c4206f4ca8a2211faa89522) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bf76a7e2692afa3a8bf8d85d02ce93d2') in 0.0784207 seconds
+  path: Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/DryDirt.mat
+  artifactKey: Guid(1511ad56e11bc754d8017a5b560f8043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaded Spectrum/Free Realistic Outdoor Materials/Materials/DryDirt.mat using Guid(1511ad56e11bc754d8017a5b560f8043) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a21be1c2dc87cd26a5057ac06f2a130a') in 1.1842419 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
