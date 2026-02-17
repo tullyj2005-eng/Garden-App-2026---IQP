@@ -8,6 +8,7 @@ IQP app project, a gardening app to bridge the gap between workers and students 
 - Main Screen
 - Quizzes
 - Rewards
+- CRAZY POMEGRANATE
 - 
 
 ## **FEATURES**
