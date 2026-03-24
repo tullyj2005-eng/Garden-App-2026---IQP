@@ -30,6 +30,7 @@ public class PopUpScript : MonoBehaviour
 
         transform.SetParent(canvas);
         transform.localScale = Vector3.one;
+        transform.localPosition = Vector3.zero;
 
         _button1.onClick.AddListener(() =>
         {
