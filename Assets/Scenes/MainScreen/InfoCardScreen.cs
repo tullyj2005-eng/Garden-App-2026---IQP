@@ -6,7 +6,7 @@ public class InfoCardScreen : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
    public void ToInfoCardScreen()
     {
-        SceneManager.LoadScene("Second_Screen");    
+        SceneManager.LoadScene("InfoScreen");    
     }
 
     public void ToRoadMapScreen()
