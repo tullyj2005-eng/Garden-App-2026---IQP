@@ -9,6 +9,8 @@ public class Tomato : MonoBehaviour
         Action action = () =>
         {
             Debug.Log("Tomato Pressed!!");
+            
+
         };
 
         Button button = GetComponent<Button>();

@@ -32,15 +32,17 @@ public class PopUpScript : MonoBehaviour
         transform.localScale = Vector3.one;
         transform.localPosition = Vector3.zero;
 
-        _button1.onClick.AddListener(() =>
+        _button1.onClick.AddListener(() =>//this is the exit button, leaves the popup
         {
-            action1();
+           
             GameObject.Destroy(this.gameObject);
         });
 
-        _button2.onClick.AddListener(() =>
+        _button2.onClick.AddListener(() => //this is the track button
         {
-             GameObject.Destroy(this.gameObject);
+            
+            action1(); //this action will place the plant into your tracked plants scroll view on the main screen
+            GameObject.Destroy(this.gameObject);
         });
     }
 
