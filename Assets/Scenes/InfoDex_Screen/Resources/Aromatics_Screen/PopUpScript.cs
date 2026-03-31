@@ -8,9 +8,10 @@ public class PopUpScript : MonoBehaviour
 {
     [SerializeField] Button _button1;
     [SerializeField] Button _button2;
-    [SerializeField] Text _button1Text;
-    [SerializeField] Text _button2Text;
+    [SerializeField] Button _button3;
+    
     [SerializeField] Text _popupText;
+    [SerializeField] Text _titleText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
