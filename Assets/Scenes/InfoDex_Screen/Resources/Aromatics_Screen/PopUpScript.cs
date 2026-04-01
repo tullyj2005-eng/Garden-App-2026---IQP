@@ -39,6 +39,20 @@ public class PopUpScript : MonoBehaviour
             GameObject.Destroy(this.gameObject);
         });
 
+        _button3.onClick.AddListener(() => //this is how to button, to display instructions on how to plant 
+        {
+            if(GameObject.Find("Instructions(Clone)") != null) //if the instructions are already open, don't open another one
+            {
+                return;
+            }
+            if(GameObject.Find("PlantInfo(Clone)")) 
+            {
+                GameObject.Destroy(this.gameObject);
+            }
+            GameObject popUpGo = Instantiate(Resources.Load("UI/Instructions") as GameObject);
+            
+        });
+
         _button2.onClick.AddListener(() => //this is the track button
         {
             
