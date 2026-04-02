@@ -1,16 +1,11 @@
 using UnityEngine;
 
-public class PlantData : MonoBehaviour
+[CreateAssetMenu(fileName = "NewPlant", menuName = "Garden/PlantData")]
+public class PlantData : ScriptableObject
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string plantName;
+    [TextArea(3, 10)]
+    public string description;
+    public float waterIntervalHours; // How many hours until it needs water
+    public GameObject plantModelPrefab; // The 3D model or Sprite for the main scene
 }
