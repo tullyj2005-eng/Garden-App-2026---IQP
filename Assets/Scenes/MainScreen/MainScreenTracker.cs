@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MAinScreenTracker : MonoBehaviour
+public class MainScreenTracker : MonoBehaviour
 {
     public SelectedPlantState stateTracker; // Drag "ActivePlantTracker" here
 

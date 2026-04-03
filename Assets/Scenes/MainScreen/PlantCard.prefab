@@ -370,8 +370,9 @@ GameObject:
   - component: {fileID: 1973742323308304005}
   - component: {fileID: 8051998233292569806}
   - component: {fileID: 7027566858494184025}
+  - component: {fileID: 7698680610385414253}
   m_Layer: 5
-  m_Name: Plant Card
+  m_Name: PlantCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -385,7 +386,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6922216520372775777}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1.55221}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -396,7 +397,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 230, y: 0}
+  m_AnchoredPosition: {x: 589.66284, y: 207.06815}
   m_SizeDelta: {x: 250, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8051998233292569806
@@ -437,6 +438,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7698680610385414253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6922216520372775777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ceaabde1a944a749bd3b797f73663b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantCard
+  nameText: {fileID: 5894454272224034331}
+  descriptionText: {fileID: 0}
+  plantIcon: {fileID: 2845822701615336989}
+  waterSlider: {fileID: 3762832956600507556}
+  myData: {fileID: 0}
 --- !u!1 &7433931849161553438
 GameObject:
   m_ObjectHideFlags: 0
